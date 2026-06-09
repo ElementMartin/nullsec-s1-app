@@ -1,0 +1,5 @@
+# Blank issues are disabled so reports use one of the structured templates.
+# Security vulnerabilities must NOT be filed as public issues — see SECURITY.md
+# for the responsible-disclosure process. Contribution guidance is in
+# CONTRIBUTING.md.
+blank_issues_enabled: false
