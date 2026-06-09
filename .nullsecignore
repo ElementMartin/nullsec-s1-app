@@ -1,0 +1,5 @@
+benchmarks/
+corpus/
+training/
+taxonomy/
+*.egg-info/
