@@ -1,0 +1,47 @@
+.venv/
+__pycache__/
+*.pyc
+*.egg-info/
+.pytest_cache/
+.DS_Store
+
+# Generated data / reports (regenerated locally; not source of truth)
+data/processed/
+data/raw/*.jsonl
+data/ingest_candidates/
+data/ingest_rejected/
+benchmarks/reports/
+model-arena/runs/
+releases/*
+!releases/README.md
+
+# Trained artifacts — distributed via GitHub Releases, NEVER committed to source.
+# RC1 produced these on RunPod; the source repo stays lightweight.
+outputs/
+*.safetensors
+nullsec-s1-trained-artifacts.tar.gz
+*.tar.gz
+
+# Local RunPod / training scratch (kept out of source; PATCHED is applied into
+# training/train_qlora.py, not committed on its own)
+train_qlora_PATCHED.py
+runpod_*.log
+*.runpod
+nohup.out
+
+# Frontend scanner site
+node_modules/
+.next/
+.vercel/
+out/
+dist/
+dist-test/
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+packages/cli/runtime/
+packages/cli/dist/
+packages/cli/dist-test/
+*.tgz
